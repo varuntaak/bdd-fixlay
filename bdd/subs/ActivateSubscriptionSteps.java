@@ -24,12 +24,6 @@ public class ActivateSubscriptionSteps {
     private String id;
     Response response;
 
-    @Given("the server is up")
-    public void step1(){
-        RestAssured.port = 9001;
-        get("/").then().body(containsString("Server is up and running!"));
-    }
-
     @Given("A subscription is created in the system with [mobile]")
     public void step2(@Named("mobile") String mobile){
         response = get("/subrequest?mobile=" + mobile);

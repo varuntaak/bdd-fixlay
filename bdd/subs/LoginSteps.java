@@ -82,6 +82,4 @@ public class LoginSteps {
         assertThat(actual_message, equalTo(message));
     }
 
-
-
 }

@@ -26,11 +26,6 @@ public class CheckAllSubscriptionStep {
     double mobile;
     Response response;
 
-    @Given("the server is up")
-    public void step1(){
-        RestAssured.port = 9001;
-        get("/").then().body(containsString("Server is up and running!"));
-    }
 
     @Given("the setup DB is done at $set_up_path")
     public void step2(@Named("set_up_path") String path){

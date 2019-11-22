@@ -1,8 +1,5 @@
 package bdd.subs;
 
-import bdd.CheckServerStatusSteps;
-import bdd.CreateAccountStep;
-import bdd.TransferMoneyStep;
 import org.jbehave.core.configuration.Configuration;
 import org.jbehave.core.configuration.MostUsefulConfiguration;
 import org.jbehave.core.io.LoadFromClasspath;
